@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 83181478}
   - component: {fileID: 83181477}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,8 +208,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83181476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10, z: 0}
-  m_LocalScale: {x: 100, y: 1, z: 4}
+  m_LocalPosition: {x: 100, y: -10, z: 0}
+  m_LocalScale: {x: 400, y: 1, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -304,6 +304,7 @@ GameObject:
   - component: {fileID: 299302305}
   - component: {fileID: 299302304}
   - component: {fileID: 299302303}
+  - component: {fileID: 299302306}
   m_Layer: 0
   m_Name: _MainCamera
   m_TagString: MainCamera
@@ -376,6 +377,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &299302306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299302302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf00a45e26aeb148b1d41a15d0675c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camZ: 0
+  easing: 0.05
+  minXY: {x: 0, y: 0}
 --- !u!1 &356326739
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 525095992}
   - component: {fileID: 525095991}
+  - component: {fileID: 525095993}
   m_Layer: 0
   m_Name: Slingshot
   m_TagString: Untagged
@@ -503,6 +520,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -15, z: 0}
+--- !u!114 &525095993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525095990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5171016e8f9cd4db57101eea2ec3ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchPoint: {fileID: 1050164259}
+  launchPos: {x: 0, y: 0, z: 0}
+  prefabProjectile: {fileID: 2053068707320523125, guid: f793af860c046f148938ab199bc48b9b,
+    type: 3}
+  projectile: {fileID: 0}
+  aimingMode: 0
+  velocityMult: 8
 --- !u!1 &576787773
 GameObject:
   m_ObjectHideFlags: 0
